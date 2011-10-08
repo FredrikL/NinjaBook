@@ -3,7 +3,7 @@ using NinjaService.Models;
 
 namespace NinjaService.App
 {
-    class AllNinjas : IAllNinjas
+    public class AllNinjasDapper : IAllNinjas
     {
         public IEnumerable<Ninja> GetAll()
         {
