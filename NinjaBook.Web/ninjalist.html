@@ -13,21 +13,16 @@
 	<script>
 	 
 	 $(document).ready(function() {
-/*	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
-	  {
-	    tags: "cat",
-	    tagmode: "any",
-	    format: "json"
-	  },
+   $.getJSON("http://127.0.0.1:51757/?jsoncallback=?",
 	  function(data) {
 	    addToList(data);
 	  });
-	 });
-*/	
-	    var ninjas = jQuery.parseJSON('[{"Name":"ninja", "Phone":"0000"}, {"Name":"sumo", "Phone":"1111"}]');
+	 
+	
+	 /*   var ninjas = jQuery.parseJSON('[{"Name":"ninja", "Phone":"0000"}, {"Name":"sumo", "Phone":"1111"}]');
 		addToList(ninjas);
 		$('ul').listview('refresh');
-     });
+     */});
 
 	
 	function addToList(data){
