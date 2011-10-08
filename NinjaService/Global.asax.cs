@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
+using NinjaService.App;
 
 namespace NinjaService
 {
@@ -35,10 +36,12 @@ namespace NinjaService
         {
             var builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
+
+            builder.RegisterType<AllNinjas>().As<IAllNinjas>().InstancePerLifetimeScope();
+
+
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
-
-            
 
             AreaRegistration.RegisterAllAreas();
 
