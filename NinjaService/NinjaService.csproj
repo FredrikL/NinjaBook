@@ -64,7 +64,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\AllNinjas.cs" />
+    <Compile Include="App\DummyAllNinjasImplementation.cs" />
     <Compile Include="App\IAllNinjas.cs" />
     <Compile Include="Controllers\NinjaController.cs" />
     <Compile Include="Global.asax.cs">
