@@ -1,4 +1,4 @@
-﻿namespace NinjaBook.Service.App
+﻿namespace NinjaBook.Data
 {
     using System.Collections.Generic;
     using Models;

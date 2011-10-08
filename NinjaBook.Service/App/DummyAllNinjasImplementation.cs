@@ -2,7 +2,8 @@ namespace NinjaBook.Service.App
 {
     using System.Collections.Generic;
     using System.Linq;
-    using Models;
+    using Data;
+    using Data.Models;
 
     internal class DummyAllNinjasImplementation : IAllNinjas
     {

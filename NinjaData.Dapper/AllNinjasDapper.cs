@@ -2,8 +2,8 @@ namespace NinjaService.App
 {
     using System;
     using System.Collections.Generic;
-    using NinjaBook.Service.App;
-    using NinjaBook.Service.Models;
+    using NinjaBook.Data;
+    using NinjaBook.Data.Models;
 
     public class AllNinjasDapper : IAllNinjas
     {

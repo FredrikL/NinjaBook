@@ -1,8 +1,8 @@
 ﻿namespace NinjaBook.Service.Controllers
 {
     using System.Web.Mvc;
-    using Models;
-    using NinjaBook.Service.App;
+    using Data;
+    using Data.Models;
 
     public class NinjaController : Controller
     {

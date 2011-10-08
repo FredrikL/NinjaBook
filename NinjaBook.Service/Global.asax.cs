@@ -4,6 +4,7 @@
     using System.Web.Routing;
     using Autofac;
     using Autofac.Integration.Mvc;
+    using Data;
     using NinjaBook.Service.App;
 
     public class MvcApplication : System.Web.HttpApplication

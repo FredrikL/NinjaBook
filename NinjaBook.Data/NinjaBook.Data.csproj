@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}</ProjectGuid>
+    <ProjectGuid>{1F2D05A1-3222-4271-84B2-410354FF3953}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NinjaData.Dapper</RootNamespace>
-    <AssemblyName>NinjaData.Dapper</AssemblyName>
+    <RootNamespace>NinjaBook.Data</RootNamespace>
+    <AssemblyName>NinjaBook.Data</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,21 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllNinjasDapper.cs" />
+    <Compile Include="IAllNinjas.cs" />
+    <Compile Include="Models\Ninja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NinjaBook.Data\NinjaBook.Data.csproj">
-      <Project>{1F2D05A1-3222-4271-84B2-410354FF3953}</Project>
-      <Name>NinjaBook.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NinjaBook.Service\NinjaBook.Service.csproj">
-      <Project>{D127118F-5B4D-468D-960E-54051D9E4E46}</Project>
-      <Name>NinjaBook.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
