@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using NinjaService.Models;
 
 namespace NinjaService.App
@@ -7,11 +8,17 @@ namespace NinjaService.App
     {
         public IEnumerable<Ninja> GetAll()
         {
-            throw new System.NotImplementedException();
+            return Enumerable.Empty<Ninja>();
         }
 
         public Ninja Edit(Ninja ninja)
         {
+            throw new System.NotImplementedException();
+        }
+
+        public Ninja GetByNickName(string nickname)
+        {
+            return new Ninja();
             throw new System.NotImplementedException();
         }
     }

@@ -8,5 +8,6 @@ namespace NinjaService.App
         IEnumerable<Ninja> GetAll();
 
         Ninja Edit(Ninja ninja);
+        Ninja GetByNickName(string nickname);
     }
 }
