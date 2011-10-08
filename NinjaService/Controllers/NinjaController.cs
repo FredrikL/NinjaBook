@@ -16,24 +16,24 @@ namespace NinjaService.Controllers
         //
         // GET: /Njnja/
         [HttpGet]
-        public JsonResult Index()
+        public ActionResult Index()
         {
             var ninjas = this.allNinjas.GetAll();
-            return Json(ninjas, JsonRequestBehavior.AllowGet);
+            return new JsonpResult{ Data = ninjas, JsonRequestBehavior = JsonRequestBehavior.AllowGet};
         }
 
         [HttpGet]
-        public JsonResult Details(string nickname)
+        public ActionResult Details(string nickname)
         {
             var ninja = this.allNinjas.GetByNickName(nickname);
-            return Json(ninja, JsonRequestBehavior.AllowGet);
+            return new JsonpResult { Data = ninja, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
         }
 
         [HttpPost]
-        public JsonResult Edit(Ninja ninja)
+        public ActionResult Edit(Ninja ninja)
         {
             var updatedNinja = this.allNinjas.Edit(ninja);
-            return Json(updatedNinja);
+            return new JsonpResult { Data = updatedNinja};
         }
     }
 }
