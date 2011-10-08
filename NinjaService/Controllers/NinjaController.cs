@@ -1,17 +1,39 @@
 ﻿using System.Web.Mvc;
+using NinjaService.App;
 using NinjaService.Models;
 
 namespace NinjaService.Controllers
 {
     public class NinjaController : Controller
     {
-        //
-        // GET: /Njnja/
-        public JsonResult Index()
+        private IAllNinjas allNinjas;
+
+        public NinjaController(IAllNinjas allNinjas)
         {
-            
-            return Json(new Ninja(){Name ="Ninja Ninjasson", Phone = "0701 13 13 13"}, JsonRequestBehavior.AllowGet);
+            this.allNinjas = allNinjas;
         }
 
+        //
+        // GET: /Njnja/
+        [HttpGet]
+        public JsonResult Index()
+        {
+            var ninjas = this.allNinjas.GetAll();
+            return Json(ninjas, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public JsonResult Details(string nickname)
+        {
+            var ninja = this.allNinjas.GetByNickName(nickname);
+            return Json(ninja, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public JsonResult Edit(Ninja ninja)
+        {
+            var updatedNinja = this.allNinjas.Edit(ninja);
+            return Json(updatedNinja);
+        }
     }
 }
