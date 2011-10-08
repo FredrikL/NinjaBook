@@ -37,7 +37,7 @@ namespace NinjaService
             var builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
-            builder.RegisterType<AllNinjas>().As<IAllNinjas>().InstancePerLifetimeScope();
+            builder.RegisterType<DummyAllNinjasImplementation>().As<IAllNinjas>().InstancePerLifetimeScope();
 
 
             var container = builder.Build();
