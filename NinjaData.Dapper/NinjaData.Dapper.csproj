@@ -44,13 +44,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NinjaService\NinjaService.csproj">
-      <Project>{D127118F-5B4D-468D-960E-54051D9E4E46}</Project>
-      <Name>NinjaService</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <ProjectReference Include="..\NinjaBook.Service\NinjaBook.Service.csproj">
+      <Project>{D127118F-5B4D-468D-960E-54051D9E4E46}</Project>
+      <Name>NinjaBook.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

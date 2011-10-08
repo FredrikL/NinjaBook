@@ -1,8 +1,8 @@
-using System.Collections.Generic;
-using NinjaService.Models;
-
 namespace NinjaService.App
 {
+    using System.Collections.Generic;
+    using Models;
+
     public class AllNinjasDapper : IAllNinjas
     {
         public IEnumerable<Ninja> GetAll()
