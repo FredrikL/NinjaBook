@@ -1,9 +1,9 @@
-﻿using System.Web.Mvc;
-using NinjaService.App;
-using NinjaService.Models;
-
-namespace NinjaService.Controllers
+﻿namespace NinjaBook.Service.Controllers
 {
+    using System.Web.Mvc;
+    using Models;
+    using NinjaBook.Service.App;
+
     public class NinjaController : Controller
     {
         private IAllNinjas allNinjas;

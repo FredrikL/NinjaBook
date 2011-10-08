@@ -1,11 +1,11 @@
-﻿using System.Web.Mvc;
-using System.Web.Routing;
-using Autofac;
-using Autofac.Integration.Mvc;
-using NinjaService.App;
-
-namespace NinjaService
+﻿namespace NinjaBook.Service
 {
+    using System.Web.Mvc;
+    using System.Web.Routing;
+    using Autofac;
+    using Autofac.Integration.Mvc;
+    using NinjaBook.Service.App;
+
     public class MvcApplication : System.Web.HttpApplication
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)

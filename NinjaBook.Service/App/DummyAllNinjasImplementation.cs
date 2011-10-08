@@ -1,9 +1,9 @@
-using System.Collections.Generic;
-using System.Linq;
-using NinjaService.Models;
-
-namespace NinjaService.App
+namespace NinjaBook.Service.App
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using Models;
+
     internal class DummyAllNinjasImplementation : IAllNinjas
     {
         public IEnumerable<Ninja> GetAll()

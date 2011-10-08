@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using NinjaService.Models;
-
-namespace NinjaService.App
+﻿namespace NinjaBook.Service.App
 {
+    using System.Collections.Generic;
+    using Models;
+
     public interface IAllNinjas
     {
         IEnumerable<Ninja> GetAll();

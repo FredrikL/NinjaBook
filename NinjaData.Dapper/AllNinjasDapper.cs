@@ -1,7 +1,9 @@
 namespace NinjaService.App
 {
+    using System;
     using System.Collections.Generic;
-    using Models;
+    using NinjaBook.Service.App;
+    using NinjaBook.Service.Models;
 
     public class AllNinjasDapper : IAllNinjas
     {
@@ -13,6 +15,11 @@ namespace NinjaService.App
         public Ninja Edit(Ninja ninja)
         {
             throw new System.NotImplementedException();
+        }
+
+        public Ninja GetByNickName(string nickname)
+        {
+            throw new NotImplementedException();
         }
     }
 }

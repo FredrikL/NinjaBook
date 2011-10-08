@@ -1,4 +1,4 @@
-﻿namespace NinjaService.Models
+﻿namespace NinjaBook.Service.Models
 {
     public class Ninja
     {
