@@ -4,7 +4,7 @@ using NinjaService.Models;
 
 namespace NinjaService.App
 {
-    class AllNinjas : IAllNinjas
+    internal class DummyAllNinjasImplementation : IAllNinjas
     {
         public IEnumerable<Ninja> GetAll()
         {
@@ -13,13 +13,12 @@ namespace NinjaService.App
 
         public Ninja Edit(Ninja ninja)
         {
-            throw new System.NotImplementedException();
+            return ninja;
         }
 
         public Ninja GetByNickName(string nickname)
         {
-            return new Ninja();
-            throw new System.NotImplementedException();
+            return new Ninja(){Nickname = nickname, Name = "Ninja Ninjasson", Phone="123456"};
         }
     }
 }
