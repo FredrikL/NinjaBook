@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaService.Tests.Integration", "NinjaService.Tests.Integration\NinjaService.Tests.Integration.csproj", "{83CA0BB9-E542-423C-B367-4FAB18292E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaData.Dapper", "NinjaData.Dapper\NinjaData.Dapper.csproj", "{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaBook.Service", "NinjaBook.Service\NinjaBook.Service.csproj", "{D127118F-5B4D-468D-960E-54051D9E4E46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaBook.Data", "NinjaBook.Data\NinjaBook.Data.csproj", "{1F2D05A1-3222-4271-84B2-410354FF3953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaBook.Data.Dapper", "NinjaBook.Data.Dapper\NinjaBook.Data.Dapper.csproj", "{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		{83CA0BB9-E542-423C-B367-4FAB18292E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83CA0BB9-E542-423C-B367-4FAB18292E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83CA0BB9-E542-423C-B367-4FAB18292E55}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D127118F-5B4D-468D-960E-54051D9E4E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D127118F-5B4D-468D-960E-54051D9E4E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D127118F-5B4D-468D-960E-54051D9E4E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,6 +27,10 @@ Global
 		{1F2D05A1-3222-4271-84B2-410354FF3953}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F2D05A1-3222-4271-84B2-410354FF3953}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F2D05A1-3222-4271-84B2-410354FF3953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

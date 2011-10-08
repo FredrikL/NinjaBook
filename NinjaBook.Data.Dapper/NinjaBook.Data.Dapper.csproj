@@ -8,8 +8,8 @@
     <ProjectGuid>{6CE0CB77-38BB-4D6A-81B2-200CE82C5EA2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NinjaData.Dapper</RootNamespace>
-    <AssemblyName>NinjaData.Dapper</AssemblyName>
+    <RootNamespace>NinjaBook.Data.Dapper</RootNamespace>
+    <AssemblyName>NinjaBook.Data.Dapper</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
