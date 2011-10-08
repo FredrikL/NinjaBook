@@ -6,11 +6,11 @@ namespace NinjaService.Controllers
 {
     public class NinjaController : Controller
     {
-        private IAllNinjas AllNinjas;
+        private IAllNinjas allNinjas;
 
         public NinjaController(IAllNinjas allNinjas)
         {
-            this.AllNinjas = allNinjas;
+            this.allNinjas = allNinjas;
         }
 
         //
@@ -18,14 +18,21 @@ namespace NinjaService.Controllers
         [HttpGet]
         public JsonResult Index()
         {
-            var ninjas = this.AllNinjas.GetAll();
+            var ninjas = this.allNinjas.GetAll();
             return Json(ninjas, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public JsonResult Details(string nickname)
+        {
+            var ninja = this.allNinjas.GetByNickName(nickname);
+            return Json(ninja, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
         public JsonResult Edit(Ninja ninja)
         {
-            var updatedNinja = this.AllNinjas.Edit(ninja);
+            var updatedNinja = this.allNinjas.Edit(ninja);
             return Json(updatedNinja);
         }
     }
