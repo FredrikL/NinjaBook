@@ -9,9 +9,8 @@ namespace NinjaService.Controllers
         // GET: /Njnja/
         public JsonResult Index()
         {
-            
-            return Json(new Ninja(){Name ="Ninja Ninjasson", Phone = "0701 13 13 13"}, JsonRequestBehavior.AllowGet);
+            var ninjas = new[] {new Ninja() {Name = "Ninja Ninjasson", Phone = "0701 13 13 13"}};
+            return Json(ninjas, JsonRequestBehavior.AllowGet);
         }
-
     }
 }
